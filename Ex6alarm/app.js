@@ -1,3 +1,4 @@
+let animation = document.getElementsByTagName("img")[0]
 let timer;
 
 let btnreset = false;
@@ -56,9 +57,11 @@ setInterval(() => {
     // we add audio in alarm 
     if (timer == `${hour}:${minute} ${xm}`) {
         document.getElementById('myAudio').play();
-    }
 
-    
+        // we add animation in watch Image
+        
+        animation.classList.add("animation")
+    }
 
 }, 100);
 
@@ -110,19 +113,20 @@ setalarm.addEventListener("click", alarm)
 function alarm() {
    // now we add in disable class in content 
    let content = document.getElementById("content")
+   // we take all elements which have our input for set alarm
+   let hourvalue = document.getElementById("selecthour")
+   let minutevalue = document.getElementById("selectminute")
+   let xmvalue = document.getElementById("selectxm")
 
-    if(btnreset){
+   if(btnreset){
         timer = ""; // we empty the timer
         document.getElementById('myAudio').pause();
         content.classList.remove("disable");
         setalarm.innerText  = "Set Alarm"
+        animation.classList.remove("animation")
         return btnreset = false; //we again false this btnreset
     }
 
-    // we take all elements which have our input for set alarm
-    let hourvalue = document.getElementById("selecthour")
-    let minutevalue = document.getElementById("selectminute")
-    let xmvalue = document.getElementById("selectxm")
 
     let time = `${hourvalue.value}:${minutevalue.value} ${xmvalue.value}`
 
@@ -174,3 +178,5 @@ function alarm() {
     }
 }
 
+
+        
