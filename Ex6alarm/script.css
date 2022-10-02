@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Signika+Negative&display=swap');
+/* we import these for google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Geo&family=Graduate&family=Kameron&display=swap');
+
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Signika Negative;
+}
+
+/* this type we can give two elements body and .wrapper class both will be apply this property */
+body,.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px yellow;
+   
+}
+
+body{
+    background-color: rgb(8, 106, 131);
+    min-height: 100vh;
+    
+}
+
+.wrapper{
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 44px 65px;
+    background-color: white;
+    border-radius: 33px;
+    width: 600px;
+    background-color: rgb(244, 244, 138);
+}
+
+.wrapper h1{
+    font-size: 50px;
+    padding: 12px;
+    color: rgb(32, 32, 102);
+    font-family: Kameron;
+    box-shadow: 3px 3px 8px blue;
+    background-color: yellow;
+    margin: 12px;
+}
+
+.wrapper img{
+    max-width: 180px;
+    
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin:auto;
+    /* width: 100%; */
+
+    
+}
+
+.column{
+    /* margin: 10px; */
+padding: 15px 22px;
+margin: 22px;
+    /* . */
+}
+
+.column select{
+    font-size: 20px;
+    padding: 5px;
+    font-weight:lighter;
+    border-radius: 12px;
+    box-shadow: 3px 3px 4px blue;
+    margin: 3px;
+    background-color: rgb(89, 255, 89);
+}
+
+.column select:active{
+    background-color: rgb(89, 180, 255);
+}
+
+
+
+#setalarm{
+    font-size: 25px;
+    padding: 12px;
+    border: 2px solid blue;
+    border-radius: 12px;
+    background-color: rgb(1, 53, 196);
+    box-shadow: 3px 3px 10px black;
+    color: rgb(249, 255, 131);
+    font-weight: bold;
+    font-family:Kameron ;
+}
+
+#setalarm:hover{
+    background-color: green;
+    color: yellow;
+    border-color: yellow;
+}
+
+
+
+/* it is for disable all select and options */
+
+.wrapper .disable{
+    opacity: 0.4;
+    pointer-events: none;
+
+}
