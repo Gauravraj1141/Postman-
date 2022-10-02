@@ -169,7 +169,7 @@ function alarm() {
         content.classList.add("disable")
 
         // now we add clear alarm in alarm btn
-        setalarm.innerText = "Clear Alarm"
+        setalarm.innerText = "Stop Alarm"
 
     }
 }
