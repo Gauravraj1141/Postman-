@@ -62,6 +62,11 @@ setInterval(() => {
         
         animation.classList.add("animation")
     }
+    
+    else{
+        animation.classList.remove("animation")
+
+    }
 
 }, 100);
 
@@ -157,7 +162,7 @@ function alarm() {
     if (minute.toString().length < 2) {
         minute = `0${minute}`
     }
-    // now logic for our alrm 
+    // we give this if codition while any person don't set the alarm and press the set btn so it will give an alert.
     if (time.includes("Hour") || time.includes("Minute") || time.includes("AM/PM") ){
 
         alert("please choose correct time.")
@@ -166,10 +171,10 @@ function alarm() {
     else {
         timer = time;
         btnreset = true;
-1
+
      
 
-        // we add this disable class it disable all the select
+        // we add this disable class it disable all the select means when alarm will be set so we add a class in all  select which is disable the select option.
         content.classList.add("disable")
 
         // now we add clear alarm in alarm btn
