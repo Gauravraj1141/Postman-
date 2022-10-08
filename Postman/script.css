@@ -1,6 +1,8 @@
 
-body{background-color: rgb(120, 120, 20)cover;}
+#addimg{
+    background-color: rgb(255, 255, 100);
 
+}
 .language-javascript{
     height: 300px;
 }

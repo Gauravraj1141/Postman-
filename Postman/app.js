@@ -13,9 +13,6 @@ function increaseparamstring(string) {
 }
 
 
-
-
-
 // first we show when we are in content type and press  json so request json box will be show and if press custom parameter so parameter will show.  
 
 let requestJsonBox = document.getElementById("requestJsonBox")
@@ -173,8 +170,4 @@ submitbtn.addEventListener("click", () => {
 })
 
 
-
-
-
-// Now we can work on our documentation button .  
 

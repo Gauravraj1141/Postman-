@@ -1,0 +1,3 @@
+hey this is file inside it we give some text and we can give  in this path any or the api and get the data from the server and use. 
+
+we give get in first argument this means we only get data and when we give Post so this means we give some data and url and we want to response from the url accroding to data that we give with url .

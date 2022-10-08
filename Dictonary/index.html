@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dictonary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="sctipt.css">
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <nav class="navbar" style="background-color: #01243d;">
+        <div class="container-fluid">
+            <a style="color:rgb(234, 249, 121); font-size: 25px;" class="navbar-brand">My Dictonary</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- inputbox -->
+
+    <div class="container my-4 ">
+        <h1 class="text-center">Welcome To Dictonary</h1>
+        <form>
+            <div class="mb-3 my-3">
+
+                <label for="inp" class="form-label">Search Any Word</label>
+                <input type="text" placeholder="Write a Word" class="form-control" id="inp"
+                    aria-describedby="emailHelp">
+            </div>
+            <button id="submit" type="submit" class="btn btn-primary">Search Meaning</button>
+            <hr>
+        </form>
+
+
+        <!-- show result -->
+        <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                All Meanings
+            </button>
+            <ul>
+                <li>meaning no 1</li>
+               
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="dict.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

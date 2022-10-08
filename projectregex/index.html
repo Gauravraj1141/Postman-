@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gaurav Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="script.js">
+</head>
+
+<body>
+    <!-- inside it a show class will be show it on display so we give this class after submit form. -->
+    <div id="alert" class="alert  alert-dismissible fade" role="alert">
+        <strong>Success!</strong> Your Car Request have been Successfully Submitted .
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="container my-3">
+        <h1>Welcome to Gaurav Travel</h1>
+
+        <div class="mb-4 my-3 ">
+            <label class="form-label">
+                <h5>Enter User Name</h5>
+            </label>
+            <!-- we add is-invalid class for show this  -->
+            <input type="text" class="form-control " id="name" placeholder="Enter Your Name..">
+            <!-- it is for validation -->
+
+            <div id="namevalid" class="invalid-feedback">
+                Please Enter a valid name.
+            </div>
+        </div>
+
+        <div class="mb-3 my-3">
+            <label class="form-label">
+                <h5>Enter Email </h5>
+            </label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Your Email..">
+            <div id="emailvalid" class="invalid-feedback">
+                Please Enter a valid Email.
+            </div>
+        </div>
+    
+
+    <div class="mb-4 my-3 ">
+        <label class="form-label">
+            <h5>Enter Phone No.</h5>
+        </label>
+        <input type="text" class="form-control" id="phone" placeholder="Enter Your Phone number..">
+        <div id="phonevalid" class="invalid-feedback">
+            Please Enter a valid Phone No.
+        </div>
+    </div>
+   
+
+
+    <select id="car" class="form-select my-2" aria-label="Default select example">
+        <option selected>Select Your Car</option>
+        <option value="1">Swift</option>
+        <option value="2">Omini</option>
+        <option value="3">Thar</option>
+        <option value="4">Fortuner</option>
+    </select>
+
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label my-2">
+            <h5>Enter Your Address </h5>
+        </label>
+        <textarea class="form-control" id="massage" rows="2"></textarea>
+    </div>
+
+    <input class="btn btn-primary mb-3" type="submit" id="submit" value="Submit">
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+h1 {
+    border: 2px solid rgb(251, 197, 0);
+    text-align: center;
+    border-radius: 21px;
+    margin: 15px;
+    background-color: yellow;
+}
+
+#image img {
+
+    width: 10rem;
+    border: 2px solid black;
+    border-radius: 33px;
+    box-shadow: 4px 3px 5px 8px rgb(6, 95, 142);
+    margin: 22px;
+}
+
+#details ul li {
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+#details ul {
+    text-align: center;
+}

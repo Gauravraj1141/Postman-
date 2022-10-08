@@ -1,0 +1,17 @@
+.selects{font-size: 22px;
+background-color: yellow;
+}
+
+
+/* we make a class and when we press disable btn this select willbe disable */
+.disabled{
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+#btn{
+    font-size: 22px;
+    margin: 22px;
+    background-color: blue;
+    color: white;
+}
