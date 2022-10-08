@@ -1,8 +1,8 @@
 
-#addimg{
-    background-color: rgb(255, 255, 100);
-
+#addcolor{
+    background-image: url(app.jsp);
 }
+
 .language-javascript{
     height: 300px;
 }
